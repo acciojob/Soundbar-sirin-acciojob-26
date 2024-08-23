@@ -1,1 +1,36 @@
 /*  your css code here. If applicable */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#buttons {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.btn, .stop {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #dcdcdc;
+}
+
+.stop {
+    background-color: red;
+    color: white;
+}
+
+.stop:hover {
+    background-color: darkred;
+}
